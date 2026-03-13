@@ -127,3 +127,13 @@
 // case sensitive
 // =======================================
 
+// var name1="GHULAM"
+// var name2="hassan"
+
+// console.log(name1,name1.toLowerCase());
+// console.log(name2,name2.toUpperCase());
+
+// ======================================
+//    LENGTH
+// ======================================
+

@@ -113,4 +113,17 @@
 // console.log('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ' + 'exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.');
 
 // console.log(`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`);
+// =========================
+//       Solution
+// =========================
+// function fullName(firstName,lastName){
+//     // const result1= firstName+""+lastName; //concatination in ES5
+//     const result2= `${firstName} ${lastName}`; //concatination in ES6
+//     return result2.toUpperCase()
+// }
+
+// console.log(fullName("ghulam","hassan"))
+// =======================================
+// case sensitive
+// =======================================
 

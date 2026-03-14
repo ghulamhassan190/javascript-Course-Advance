@@ -199,8 +199,14 @@
 // var number=Math.round(Math.random()*5+1)
 // console.log(number);
 
-var parseint="49.4"
-var parsefloat="49.4"
-console.log(parseInt(parseint));
-console.log(parseFloat(parsefloat));
+// var parseint="49.4"
+// var parsefloat="49.4"
+// var number="49.4"
+// var decimalvalue=Math.random()*10
+// console.log(parseInt(parseint));
+// console.log(parseFloat(parsefloat));
+// console.log(Number(number));
+// console.log(+decimalvalue.toFixed(2));
+
+
 

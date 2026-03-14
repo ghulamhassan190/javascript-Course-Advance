@@ -137,3 +137,30 @@
 //    LENGTH
 // ======================================
 
+// var names="ghulam hassan"
+// var a=names.split(" ")
+// console.log(a);
+// var myText="GHULAM hASsan"
+// var newArr=[]
+// var update=myText.split(" ")
+// console.log(update);
+
+// for (let i = 0; i < update.length; i++) {
+//   // console.log(update[i]);
+//   var newUpdate=update[i][0].toUpperCase()+update[i].slice(1).toLowerCase()
+//     console.log(newUpdate);
+//     newArr.push(newUpdate)
+    
+    
+//   }
+  
+//   console.log(newArr.join(" "));
+// ========================================
+var myName="GHULAM HASSAN"
+var count=0
+
+for (let i = 0; i < myName.length; i++) {
+if (myName[i]==="S") {
+  count++;
+}  
+}

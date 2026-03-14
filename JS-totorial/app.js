@@ -156,11 +156,46 @@
   
 //   console.log(newArr.join(" "));
 // ========================================
-var myName="GHULAM HASSAN"
-var count=0
+// var myName="GHULAM HASSAN"
+// var count=0
 
-for (let i = 0; i < myName.length; i++) {
-if (myName[i]==="S") {
-  count++;
-}  
-}
+// for (let i = 0; i < myName.length; i++) {
+// if (myName[i]==="S") {
+//   count++;
+// }  
+// }
+
+// =================================================
+//            ARRAY Method | in Javascript 
+// =================================================
+// const names = ["Ali", "Ahmed", "Sara", "Ayesha", "Usman", "Fatima"];console.log(names.length);
+// console.log(names[names.length-1]);
+
+// const studentName = [
+//   "Ali","Ahmed","Sara","Ayesha","Usman","Fatima","Hassan","Hussain","Bilal","Zain",
+//   "Hamza","Saad","Umar","Taha","Abdullah","Maryam","Noor","Iqra","Hira","Sana",
+//   "Danish","Farhan","Talha","Rehan","Shayan","Kashif","Arham","Areeba","Laiba","Anaya",
+//   "Mehwish","Rabia","Komal","Mahnoor","Bushra","Sadia","Asad","Noman","Imran","Adnan"
+// ];
+
+// console.log(studentName);
+// console.log(names);
+// const update=studentName.concat(names)
+// console.log(update);
+// console.log(update.reverse());
+
+// console.log(names.unshift("ahmed"));
+// console.log(names.shift("ahmed"));
+// console.log(names);
+
+// console.log(names.splice(2,1));
+// console.log(names);
+
+// =================================================
+//            NUMBER Method | in Javascript 
+// =================================================
+// var num=50.78;
+// console.log(Math.round(num));
+// var number=Math.round(Math.random()*5+1)
+// console.log(number);
+

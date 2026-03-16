@@ -1,7 +1,7 @@
 // // loop in javascript
 // for(i=0;i<100;i++){
 //   console.log('hello',i);
-  
+
 // }
 
 // var a ="Apple";
@@ -28,11 +28,11 @@
 //   console.log(" Palindrome value");
 // }else{
 //   console.log(" Not Palindrome value");
-  
+
 // }
 
 // ==============================================
-       //  Switch statement in javascript 
+//  Switch statement in javascript 
 // ==============================================
 
 // var day="Monday";
@@ -51,7 +51,7 @@
 //     break;
 //   default:
 //     console.log("Invalid value");
-    
+
 // }
 
 
@@ -75,20 +75,20 @@
 //   }
 // }
 // ========================================================
-                 // Method 2 type 
-  // ======================================================
+// Method 2 type 
+// ======================================================
 // const student={
 //   name:"hassan",
 //   greeting:function(){
 //     console.log('salam');
-    
+
 //   }
 // }
 // const student2={
 //   name:"hassan",
 //   greeting(){
 //     console.log('salam');
-    
+
 //   }
 // }
 
@@ -107,7 +107,7 @@
 // let friut=["biryani","korma"].slice(1,2)[0][0]
 // console.log(friut);
 // ==================================================
-            // Template Litertals ES6 
+// Template Litertals ES6 
 // ==================================================
 
 // console.log('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ' + 'exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.');
@@ -150,10 +150,10 @@
 //   var newUpdate=update[i][0].toUpperCase()+update[i].slice(1).toLowerCase()
 //     console.log(newUpdate);
 //     newArr.push(newUpdate)
-    
-    
+
+
 //   }
-  
+
 //   console.log(newArr.join(" "));
 // ========================================
 // var myName="GHULAM HASSAN"
@@ -198,7 +198,9 @@
 // console.log(Math.round(num));
 // var number=Math.round(Math.random()*5+1)
 // console.log(number);
-
+// ======================================
+//  parseInt| parseFloat
+//  =====================================
 // var parseint="49.4"
 // var parsefloat="49.4"
 // var number="49.4"
@@ -208,5 +210,173 @@
 // console.log(Number(number));
 // console.log(+decimalvalue.toFixed(2));
 
+// var ceilNumber=1.1;
+// console.log(Math.ceil(ceilNumber));
+
+// ==================================
+//     lodo | in | Javascript
+// ==================================
+// var Lodo=Math.ceil(Math.random()*6)
+// console.log(Lodo);
+
+// ==================================
+//    PIValue | in | Javascript
+// ==================================
+// var PIValue=Math.PI
+// console.log(PIValue);
+
+// ==================================
+//   SquareRoot | in | Javascript
+// ==================================
+// var SqrtValue=Math.sqrt(81)
+// console.log(SqrtValue);
+
+// ==================================
+//    min max | in | Javascript
+// ==================================
+// var minValue=Math.min(2,4,5,6,7,8,44,2)
+// var maxValue=Math.max(2,4,5,6,7,8,44,2)
+// console.log(minValue,maxValue);
+
+// ==========================================
+// Convert Number to Words | in | Javascript
+// ==========================================
+
+// function convertNumberToWord(num) {
+//        // if (num < 1) return "Zero"
+//        if (num < 0) return "Invalid value"
+//        if (num == 0) return "Invalid value"
+
+//        const arr = ["", "One", "Two", "Three", "Four", "Five",
+//               "Six", "Seven", "Eight", "Nine", "Ten",
+//               "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen",
+//               "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty"]
+//        let tens = [
+//               "",
+//               "",
+//               "Twenty",
+//               "Thirty",
+//               "Forty",
+//               "Fifty",
+//               "Sixty",
+//               "Seventy",
+//               "Eighty",
+//               "Ninety",
+//               "One Hundred"
+//        ];
+//        let hundreds = [
+//               "One Hundred",
+//               "Two Hundred",
+//               "Three Hundred",
+//               "Four Hundred",
+//               "Five Hundred",
+//               "Six Hundred",
+//               "Seven Hundred",
+//               "Eight Hundred",
+//               "Nine Hundred",
+//               "One Thousand"
+//        ];
+
+//        function hundredlessthen(num) {
+//               if (num <= 20) return arr[num]
+//               if (num % 10 === 0) {
+//                      return tens[Math.floor(num / 10)]
+//               }
+//               return tens[Math.floor(num / 10)] + " " + arr[num % 10]
+//        }
+//        function thousandlessthen(num) {
+//               if (num % 100 === 0) {
+//                      return hundreds[Math.floor(num / 100)]
+//               }
+//               return hundreds[Math.floor(num / 100)] + " and " + hundredlessthen(num % 100)
+//        } function tenthousandlessthen(num) {
+//               if (num % 1000 === 0) {
+//                      return arr[Math.floor(num / 1000)] + " thousand"
+//               }
+
+//               if ((num % 1000) < 100) {
+//                      return arr[Math.floor(num / 1000)] + " thousand and " + hundredlessthen(num % 1000)
+//               }
+
+//               return arr[Math.floor(num / 1000)] + " thousand " + thousandlessthen(num % 1000)
+//        }
+//        if (num < 20) {
+//               return arr[num]
+//        }
+//        if (num < 100) {
+//               return hundredlessthen(num)
+//        }
+
+//        if (num < 1000) {
+//               return thousandlessthen(num)
+
+//        }
+
+//        if (num < 10000) {
+//               return tenthousandlessthen(num)
+
+//        }
+
+//        if (num < 100000) {
+//               return arr[Math.floor(num / 10000)] + " thousand " + tenthousandlessthen(num % 10000)
+//        }
+
+// }
+// console.log(convertNumberToWord(449));
+
+// ===========================================
+       // Date|Time|In|JavaScript 
+// ===========================================
+// var curruntDate=new Date()
+// console.log(curruntDate);
+
+// console.log(curruntDate.getFullYear());
+// console.log(curruntDate.getHours());
+// console.log(curruntDate.getMilliseconds());
+// console.log(curruntDate.getMinutes());
+// console.log(curruntDate.getMonth());
+// console.log(curruntDate.getSeconds());
+// console.log(curruntDate.getTime());
+// console.log(curruntDate.getTimezoneOffset());
+// console.log(curruntDate.getUTCDate());
+
+// ===============================================
+//         Day|Check|In|Javascript
+// ===============================================
+// var curruntDate=new Date()
+// var Day=curruntDate.getDay()
+// var arr=["sun","mon","tues","wednes","fri","sat"]
+// console.log(arr[Day])
 
 
+// ===============================================
+//         MONTH|Check|In|Javascript
+// ===============================================
+// var curruntDate=new Date()
+// var monthsCheck=curruntDate.getMonth()
+// const months = ["January","February","March","April","May","June","July", "August","September", "October","November", "December"
+// ];
+// console.log(months[monthsCheck])
+
+// =================================================
+//           AM|PM|CHANGE|IN|JAVASCRIPT
+// =================================================
+// var curruntDate=new Date()
+// curruntDate.setHours("23")
+//   if (curruntDate.getHours()>12) {
+//        document.writeln(`It is Hours ${curruntDate.getHours() - 12 } PM`)
+// } else {
+//          document.writeln(`It is Hours ${curruntDate.getHours() } AM`)
+       
+//   }
+// ==================
+//     EXAMPLE
+// ==================
+// const months = ["January","February","March","April","May","June","July", "August","September", "October","November", "December"
+// ];
+// document.writeln("Our Quiz and happens in " + " " +curruntDate.getDate() + " "+
+// months[curruntDate.getMonth()] +" "+ curruntDate.getFullYear())
+
+// =============================================
+//             EVENT|IN|JAVASCRIPT  
+// =============================================

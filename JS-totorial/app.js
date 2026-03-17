@@ -325,7 +325,7 @@
 // console.log(convertNumberToWord(449));
 
 // ===========================================
-       // Date|Time|In|JavaScript 
+// Date|Time|In|JavaScript 
 // ===========================================
 // var curruntDate=new Date()
 // console.log(curruntDate);
@@ -367,7 +367,7 @@
 //        document.writeln(`It is Hours ${curruntDate.getHours() - 12 } PM`)
 // } else {
 //          document.writeln(`It is Hours ${curruntDate.getHours() } AM`)
-       
+
 //   }
 // ==================
 //     EXAMPLE
@@ -380,3 +380,94 @@
 // =============================================
 //             EVENT|IN|JAVASCRIPT  
 // =============================================
+//   onclick
+//   mouseOver
+//   mouseout
+//   mouseLeave
+
+// =============================================
+//         EVENT|INPUT|FIELD|IN|JAVASCRIPT  
+// =============================================
+// function nameFocus() {
+//        console.log("nameFocus");
+// }
+// function nameblur() {
+//        console.log("nameblur se hata ");
+// }
+// function emailFocus() {
+//        console.log("emailFocus");
+// }
+// function passwordFocus() {
+//        console.log("passwordFocus");
+// }
+
+// =============================================
+//SIGNUP|FORM|IN|JAVASCRIPT
+// =============================================
+
+
+// function signupHandle(){
+//        console.log("signuup Button ready");  
+//        var firstName=document.getElementById("firstName").value 
+//        var lastName=document.getElementById("lastName").value 
+//        var email=document.getElementById("email").value 
+//        var password=document.getElementById("password").value 
+//        var confirmPassword=document.getElementById("confirmPassword").value 
+//        console.log(firstName,lastName,email,password,confirmPassword);
+
+// }
+
+
+// complete text visible 
+// var aboutMe=`Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi fugit quas obcaecati. Repellendus velit alias vel amet laboriosam nostrum ut, natus, veritatis quod cumque labore quo, magni distinctio ea enim harum minus? Placeat nobis, fugiat et, dolorem laboriosam similique natus ipsa dignissimos asperiores expedita magni. Aliquid, impedit laboriosam? Ad.`
+// var para=document.getElementById("para")
+// para.innerText=aboutMe.slice(0,55)+ "..."
+
+
+// function Change(){
+//        para.innerText=aboutMe.slice(0)
+// }
+// function ChangeLess(){
+//        para.innerText=aboutMe.slice(0,55)
+// }
+
+
+// =============================================
+//CHANGE|THEME|IN|JAVASCRIPT
+// =============================================
+
+// function ChnageTheme(){
+//        // document.getElementsByTagName("div")[0].className="dark"
+//        if (document.getElementsByTagName("div")[0].className=="dark") {
+//               document.getElementsByTagName("div")[0].className="light"
+//        } else {
+//               document.getElementsByTagName("div")[0].className="dark"
+//        }
+// }
+// =============================================
+//FONTSIZE|INCREASE|IN|JAVASCRIPT
+// =============================================
+var fontSize = 16;
+function increasesize() {
+       console.log('ok');
+       var para = document.getElementsByTagName("p")
+       fontSize += 2
+       for (let i = 0; i < para.length; i++) {
+              console.log(para[i].style.fontSize = fontSize + "px");
+       }
+
+
+}
+function decreasesize() {
+       console.log('ok');
+       if (fontSize > 12) {
+
+              var para = document.getElementsByTagName("p")
+              fontSize -= 2
+              for (let i = 0; i < para.length; i++) {
+                     console.log(para[i].style.fontSize = fontSize + "px");
+              }
+       }
+
+
+}

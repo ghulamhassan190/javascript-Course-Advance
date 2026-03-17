@@ -449,19 +449,21 @@
 // =============================================
 var fontSize = 16;
 function increasesize() {
-       console.log('ok');
-       var para = document.getElementsByTagName("p")
-       fontSize += 2
-       for (let i = 0; i < para.length; i++) {
-              console.log(para[i].style.fontSize = fontSize + "px");
+       if (fontSize<40) {
+              console.log('ok');
+              var para = document.getElementsByTagName("p")
+              fontSize += 2
+              for (let i = 0; i < para.length; i++) {
+                     console.log(para[i].style.fontSize = fontSize + "px");
+              }
+              
        }
 
 
 }
 function decreasesize() {
        console.log('ok');
-       if (fontSize > 12) {
-
+       if (fontSize > 16) {
               var para = document.getElementsByTagName("p")
               fontSize -= 2
               for (let i = 0; i < para.length; i++) {

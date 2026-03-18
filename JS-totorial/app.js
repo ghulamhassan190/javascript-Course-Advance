@@ -534,45 +534,22 @@
 // global scope ===> var 
 // script scope ===> let const 
 // function ---> local scope ===>var 
+// block scope ===> let const 
+
+// let names='bobo';
+// names='peter';
+
+// function calculate(){
+//   //some other code .....
+//   console.log(names);
+//   names='orange'
+  
+// }
+// calculate();
+// console.log(`my name is ${names} i am awosome`);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{
+  var a="Me Abdul Basit"
+  let b="IBAD Ahmed"
+}

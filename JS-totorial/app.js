@@ -534,3 +534,45 @@
 // global scope ===> var 
 // script scope ===> let const 
 // function ---> local scope ===>var 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

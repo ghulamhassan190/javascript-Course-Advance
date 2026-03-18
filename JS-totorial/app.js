@@ -445,31 +445,92 @@
 //        }
 // }
 // =============================================
-//FONTSIZE|INCREASE|IN|JAVASCRIPT
+//     FONTSIZE|INCREASE|IN|JAVASCRIPT
 // =============================================
-var fontSize = 16;
-function increasesize() {
-       if (fontSize<40) {
-              console.log('ok');
-              var para = document.getElementsByTagName("p")
-              fontSize += 2
-              for (let i = 0; i < para.length; i++) {
-                     console.log(para[i].style.fontSize = fontSize + "px");
-              }
-              
-       }
+// var fontSize = 16;
+// function increasesize() {
+//        if (fontSize<30) {
+//               console.log('ok');
+//               var para = document.getElementsByTagName("p")
+//               fontSize += 2
+//               for (let i = 0; i < para.length; i++) {
+//                      console.log(para[i].style.fontSize = fontSize + "px");
+//               }      
+//        }else{
+//               alert("Full FontSize")
+//        }
+// }
+// function decreasesize() {
+//        console.log('ok');
+//        if (fontSize > 12) {
+//               var para = document.getElementsByTagName("p")
+//               fontSize -= 2
+//               for (let i = 0; i < para.length; i++) {
+//                      console.log(para[i].style.fontSize = fontSize + "px");
+//               }
+//        }
+// }
+
+// =============================================
+//      CLICK|BALL|IN|JAVASCRIPT
+// =============================================
+// function ballroundho(){
+//        document.getElementsByTagName("div")[0].style.borderRadius="50%"
+//        document.getElementsByTagName("div")[0].style.transform="translateX(100px)"
+// }
+
+// =============================================
+//      JUNK|ARTIFACTS|IN|JAVASCRIPT
+// =============================================
+// document.childNodes[0]
 
 
-}
-function decreasesize() {
-       console.log('ok');
-       if (fontSize > 16) {
-              var para = document.getElementsByTagName("p")
-              fontSize -= 2
-              for (let i = 0; i < para.length; i++) {
-                     console.log(para[i].style.fontSize = fontSize + "px");
-              }
-       }
+// =============================================
+//      SET|ATTRIBUTE|IN|JAVASCRIPT
+// =============================================
+// var createElement=document.createElement("button")
+// document.children[0].children[1].appendChild(createElement)
+// createElement.innerText="clickme"
 
 
-}
+
+
+// =============================================
+//      GET|ATTRIBUTE|IN|JAVASCRIPT
+// =============================================
+// var createElement=document.createElement("button")
+// document.children[0].children[1].appendChild(createElement)
+// createElement.innerText="clickme"
+// createElement.setAttribute("style","background-color:red;")
+
+// console.log(createElement.getAttribute("style"));
+// console.log(createElement.hasAttribute("style"));
+// console.log(createElement.attributes);
+
+// =============================================
+//      REMOVE|ATTRIBUTE|IN|JAVASCRIPT
+// ==============================================
+
+// var createElement=document.createElement("button")
+// document.children[0].children[1].appendChild(createElement)
+// createElement.innerText="clickme"
+// createElement.setAttribute("style","background-color:red;")
+// createElement.removeAttribute("style")
+
+// =============================================
+//     GLOBAL_LOCAL_VARIABLE|IN|JAVASCRIPT
+// ==============================================
+
+// console.log(a);
+// var a="hassan"
+
+// console.log(b);
+// let b="bilal"
+
+// console.log(c);
+// const c="raza"
+
+
+// global scope ===> var 
+// script scope ===> let const 
+// function ---> local scope ===>var 

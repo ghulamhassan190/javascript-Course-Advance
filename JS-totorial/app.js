@@ -543,13 +543,350 @@
 //   //some other code .....
 //   console.log(names);
 //   names='orange'
-  
+
 // }
 // calculate();
 // console.log(`my name is ${names} i am awosome`);
 
 
-{
-  var a="Me Abdul Basit"
-  let b="IBAD Ahmed"
-}
+// {
+//   var a="Me Abdul Basit"
+//   let b="IBAD Ahmed"
+// }
+
+// locub ==> global varible | function mein us
+
+// ====================================================
+//       HIGH|ORDER|FUNCTION|CALLBACK|IN|JAVASCRIPT
+// ====================================================
+// EXAMPLE # 01
+//------
+// function first(){
+//   console.log('first function');
+// }
+// function second(value){
+//   console.log(value()); 
+// }
+// const a=first
+// second(a)
+
+// EXAMPLE # 02
+//------
+
+// function outer(callback){
+//   console.log('outer function');
+//     callback()
+// }
+// function inner(){
+//   console.log('inner function');
+// }
+
+// outer(inner)
+
+
+// EXAMPLE # 03
+//------
+
+
+// function foo(naam){
+//   return naam.toUpperCase()
+// }
+
+// function foo2(name,callback){
+//   console.log(`${callback(name)} this is callback function`);
+
+// }
+// foo2("ghulam Hassan",foo)
+
+
+
+// EXAMPLE # 04
+//------
+
+// function makeTheCorect(firstName, lastName) {
+//   return `${firstName[0].toUpperCase() + firstName.slice(1).toLowerCase()}
+//   ${lastName[0].toUpperCase() + lastName.slice(1).toLowerCase()} 
+//   `
+// }
+// function welcomePage(firstName, lastName, callback) {
+//   console.log(` Hi Mr ${callback(firstName, lastName)} Welcome the personal project`);
+
+// }
+
+// welcomePage("GhUlAm " ,"HaSaSAn", makeTheCorect)
+
+// ==========================================================
+//    Array|Powerful|Methods-Part 1|forEach|map|filter 
+// ==========================================================
+// const resrturent=["Biryani","Korma","Nahari"]
+// resrturent.forEach(function (item,index) {
+//   console.log(item,index);
+  
+// })
+
+
+// const People = [
+//   { name: "Ali", age: 25,city: "Karachi"},
+//   {name: "Sara",age: 22,city: "Lahore"},
+//   {name: "Fatima",age: 20,city: "Queta"},
+  
+// ];
+
+// People.forEach((item)=>{
+//   console.log(item.city.toUpperCase());
+// })
+
+//               map high order function 
+// const People = [
+//   { name: "Ali", age: 25,city: "Karachi"},
+//   {name: "Sara",age: 22,city: "Lahore"},
+//   {name: "Fatima",age: 20,city: "Queta"},
+  
+// ];
+
+// const kushbhi =People.map((item)=>{
+//   // console.log(item.city.toUpperCase());
+//    return `<h1>${item.name}</h1>`
+// })
+
+// document.body.innerHTML=kushbhi.join(" ")
+
+
+// const People = [
+//   { name: "Ali", age: 25,city: "Karachi"},
+//   {name: "Sara",age: 22,city: "Lahore"},
+//   {name: "Fatima",age: 20,city: "Queta"},
+  
+// ];
+
+// const newArr=People.filter((item)=>{
+//   return item.age<25
+// })
+
+// console.log(newArr);
+
+
+// repeatative element remove 
+//bring repeatative element 
+// const arr =["Hassan","raza","ahmed","sufiyan","ahmed","sufiyan"]
+// const uniqueNames={}
+// arr.forEach((name)=>{
+//   if (uniqueNames.hasOwnProperty(name)) {
+//     console.log('===> phly se avaible hai ');
+//     uniqueNames[name]+=1
+//   } else {
+//     uniqueNames[name]=1
+//     console.log('property nhi hai ');
+    
+//   }
+// })
+
+// console.log(uniqueNames,arr);
+
+// const uniqueNames=[]
+// arr.forEach((name)=>{
+//   if (uniqueNames.includes(name)) {
+//     console.log('===> phly se avaible hai ');
+    
+//   } else {
+//     uniqueNames.push(name)
+//   }
+// })
+
+// console.log(uniqueNames,arr);
+
+
+// const resrturent=[
+//   {name:"Biryani",price:200},
+//   {name:"Korma",price:300},
+//   {name:"Nahari",price:600},
+//   {name:"labeshreen",price:500}
+// ]
+
+// const marziKaItem=resrturent.filter(function(foodItem){
+//   if (foodItem.price>100) {
+//     return foodItem
+//   } 
+// }).map(function(foodItem){
+//  return foodItem.name +" with Cold Drink"
+// })
+
+
+  // const resrturents=[
+  //   {name:"Biryani",price:200},
+  //   {name:"Korma",price:300},
+  //   {name:"Korma",price:300},
+  //   {name:"Nahari",price:600},
+  //   {name:"labeshreen",price:500}
+  // ]
+
+  // const updates=resrturents.filter(function (food){
+  //   if (food.name.startsWith('K')) {
+  //     return food
+  //   }
+  // })
+  
+  // const resrturent=[
+  //   {name:"Biryani",price:200},
+  //   {name:"Korma",price:300},
+  //   {name:"Nahari",price:600},
+  //   {name:"labeshreen",price:500},
+  //   {name:"labeshreen",price:500},
+  // ]
+
+  // const update=resrturent.filter(function (food){
+  //   if (food.name.startsWith('l')) {
+  //     return food
+  //   }
+  // }).map(function(food){
+  //    return `<h1>${food.name} is price ${food.price}</h1>`
+  // })
+
+  
+  // console.log(document.body.innerHTML=update.join(''));
+
+  
+
+
+//   const student=[
+//   {
+//     "id": 1,
+//     "name": "Ali",
+//     "marks": 85,
+//     "subject": "Math"
+//   },
+//   {
+//     "id": 2,
+//     "name": "Sara",
+//     "marks": 90,
+//     "subject": "Science"
+//   },
+//   {
+//     "id": 3,
+//     "name": "Ahmed",
+//     "marks": 78,
+//     "subject": "English"
+//   },
+//   {
+//     "id": 4,
+//     "name": "Ayesha",
+//     "marks": 88,
+//     "subject": "Computer"
+//   },
+//   {
+//     "id": 5,
+//     "name": "Bilal",
+//     "marks": 92,
+//     "subject": "Physics"
+//   }
+// ]
+// const update=student.map(function(item){
+//   // item.role="student"
+//   // item['role']="student"
+//   return {
+//     ...item,
+//     role:"student"
+//   }
+// })
+
+// console.log(update);
+
+
+// const filterValue=student.filter(function(std){
+//   if (std.marks>=80) {
+//     return true
+//   }
+// })
+
+// console.log(filterValue);
+
+// const findValue=student.find(function(std){
+//   if (std.id===4) {
+//     return true
+//   }
+// })
+
+// console.log(findValue);
+
+// reduce high order function 
+// const foodItem=["Biryani","Korma ","Nahari"]
+
+
+// foodItem.forEach(function(item,idxItem){
+//   console.log(item);
+//   console.log(idxItem);
+  
+// })
+
+
+  
+//   const foodItem=[
+//     {name:"Biryani",price:200},
+//     {name:"Korma",price:300},
+//     {name:"Nahari",price:600},
+//     {name:"labeshreen",price:500},
+//     {name:"labeshreen",price:500},
+//   ]
+//  const uupdate =foodItem.reduce(function(item,idxItem){
+
+//   return item + idxItem.price
+// },0)
+// console.log(uupdate);
+
+
+//   const student=[
+//   {
+//     "id": 1,
+//     "name": "Ali",
+//     "score": 85,
+//     "favSubject": "Math"
+//   },
+//   {
+//     "id": 2,
+//     "name": "Sara",
+//     "score": 90,
+//     "favSubject": "Science"
+//   },
+//   {
+//     "id": 3,
+//     "name": "Ahmed",
+//     "score": 78,
+//     "favSubject": "English"
+//   },
+//   {
+//     "id": 4,
+//     "name": "Ayesha",
+//     "score": 88,
+//     "favSubject": "Computer"
+//   },
+//   {
+//     "id": 5,
+//     "name": "Bilal",
+//     "score": 92,
+//     "favSubject": "Physics"
+//   }
+// ]
+
+// const totalValue=student.reduce(function(acc,curr,indNum,arr){
+//   return acc + curr.score
+// },0)
+
+// console.log(totalValue);
+// const averageValue=totalValue/student.length
+// console.log(averageValue);
+
+// const update=student.reduce(function(acc,curr,idxNum,arr){
+//   // console.log(acc[curr.favSubject]);
+//   acc[curr.favSubject]=(acc[curr.favSubject]||0)+1
+//   return acc
+// },{})
+
+
+// =================================================
+            // DOM|IN|JAVASCRIPT
+// =================================================
+// document.body.style.background="red
+// const hassan=document.getElementById("hassan")
+// hassan.style.color="red"
+// hassan.style.background="yellow"
+// hassan.style.border="2px solid black"

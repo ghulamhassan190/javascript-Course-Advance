@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="flex">
+    <div>
+      <h1>Hassan</h1>
+    </div>
+
+    <ul class="flex ul">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Help</li>
+    </ul>
+
+    <div>
+      <span>
+        <a href="" class="link"><i class="fa-solid fa-house"></i></a>
+        <a href="" class="link"><i class="fa-solid fa-calendar"></i></a>
+        <a href="" class="link"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="" class="link"><i class="fa-brands fa-youtube"></i></a>
+        <a href="" class="link"><i class="fa-solid fa-download"></i></a>
+      </span>
+      <span class="menubar">
+      <a href="#" class="menu" onclick="openMenu()"><i class="fa-solid fa-bars"></i></a>
+
+      </span>
+    </div>
+  </nav>
+ <div id="sidebar">
+    <label for="check" class="close-btn" onclick="closemenu()">✖</label>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Help</li>
+    </ul>
+  </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

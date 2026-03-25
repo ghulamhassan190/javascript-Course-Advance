@@ -1,4 +1,4 @@
-.light{
+/* .light{
   background-color: aliceblue;
   color: black;
 }
@@ -12,12 +12,8 @@ div{
   height: 200px;
   transition: 2s;
 }
-h1{
-  color: rgb(54, 54, 54);
-  background-color: rgb(207, 255, 239);
-  text-align: center;
-  text-shadow: 2px 2px 8px rgb(255, 0, 0);
-}
 body{
   background-color: black;
-}
+  color: rgb(255, 255, 255);
+  font-family: cursive;
+} */

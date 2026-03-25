@@ -890,3 +890,207 @@
 // hassan.style.color="red"
 // hassan.style.background="yellow"
 // hassan.style.border="2px solid black"
+// const hassan=document.getElementsByTagName("h1")
+// const classname=document.getElementsByClassName("raza")
+// const classname=document.querySelectorAll(".raza")
+// // console.log(hassan.nodeName);
+// // console.log(hassan.style);
+// console.log(classname);
+
+
+// let widthplus=250
+// var img=document.querySelector('img')
+// console.log(img);
+
+// function increase(){
+//   img.width+=5
+  
+// }
+
+// ============================================
+//JavaScript DOM Manipulation – Part 9 
+//(Creating & Inserting Elements Dynamically)
+// ============================================
+
+// const bodyDiv=document.createElement('div')
+// const text=document.createTextNode('A simple is web page')
+// bodyDiv.appendChild(text)
+// document.body.appendChild(bodyDiv)
+
+// const heading2=document.createElement('h2');
+// document.body.appendChild(heading2)
+// heading2.innerText='Aftab'
+
+// const heading2=document.createElement('h2');
+// const unorderList=document.createElement('ul')
+// const List=document.createElement('li')
+// const achorTag=document.createElement('a')
+// achorTag.innerText="Facebook"
+// achorTag.setAttribute("href","http://facebook.com")
+
+
+// unorderList.appendChild(List)
+// const text =document.createTextNode('Aftab')
+// heading2.appendChild(text)
+// document.body.appendChild(heading2)
+// document.body.appendChild(achorTag)
+
+// // document.body.prepend(unorderList)
+// // document.body.insertBefore(unorderList,heading2)
+
+// List.innerText="apple"
+
+// const element=document.createElement('h2')
+// element.innerText='ghulam Hassan'
+// document.body.appendChild(element)
+
+// appendChild
+// prepend
+// insertBefore
+// replaceChild
+//remove
+// const element=document.createElement('h2')
+// element.innerText='ghulam Hassan'
+// document.body.appendChild(element)
+// element.remove()
+
+// classname 
+// classlist
+// const h2=document.querySelector('h1')
+
+// =============================================
+        // ADDEVENTLISHNER|IN|JAVASCRIPT 
+// =============================================
+// const div=document.querySelector('h2')
+// const addeventH1=document.querySelector('#Hassan')
+// addeventH1.addEventListener('click',function(){
+  //   console.log('h1 click ');
+  //   div.style.background="red"
+  
+  // })
+  
+//   const userNameInput=document.querySelector('#userName')
+//   // userNameInput.addEventListener('keyup',()=>{
+//   //   console.log('keyup hoi hai');
+    
+//   // })
+//   // userNameInput.addEventListener('keypress',(e)=>{
+//   //   console.log('keyup hoi hai',e);
+    
+//   // })
+//   userNameInput.addEventListener('click',(e)=>{
+//     console.log('curruent Element using e.target',e.target);
+//     console.log('curruent Element using e.target',e.currentTarget);
+//     console.log('type check using e.type',e.type);
+    
+//   })
+
+//   document.querySelector('#btn').addEventListener('click',(e)=>{
+// console.log('ok');
+// e.preventDefault()
+
+//   })
+
+
+
+// function add(num1,num2) {
+//   return num1+num2
+// }
+// const a =add(2,3)
+// const allPara=document.querySelectorAll('p')
+// allPara.forEach((item)=>{
+//   item.addEventListener('click',function(e){
+//     e.target.style.background="green"
+//   })
+  
+// })
+
+
+//  ============================================================= 
+//                  LOCALSTORAGE|IN|JAVASCRIPT 
+//  =============================================================
+
+
+// const submitBtn=document.querySelector('button')
+// submitBtn.addEventListener('click',()=>{
+//   const signupObj={}
+//   console.log('submit per click howa ');
+//   const input=document.querySelectorAll('input')
+//   console.log(input);
+//   input.forEach((item)=>{
+//     console.log(item.value);
+//     signupObj[item.placeholder]=item.value
+//   })
+//   console.log();
+//   localStorage.setItem('userDetail',JSON.stringify(signupObj))
+//   renderUi()
+// })
+
+
+// function renderUi(){
+//   const heading=document.querySelector('#renderH1')
+//   const username=localStorage.getItem('userDetail')
+//   const usernameJson=JSON.parse(username)
+//   console.log(usernameJson);
+//   const {FirstName,SecondName,userName,email}=usernameJson
+  
+//   // const SecondName=localStorage.getItem('SecondName')
+//   // const email=localStorage.getItem('email')
+//   // const userName=localStorage.getItem('userName')
+// // console.log(detail);
+
+
+//   heading.textContent=`Hi,Mr ${FirstName} ${SecondName} your userName is ${usernameJson.userName} and your email ${email}`
+// }
+
+// renderUi()
+
+
+
+//  ============================================================= 
+//                  Settimeout|IN|JAVASCRIPT 
+//  =============================================================
+// function sayHello() {
+//   const date=new Date()
+//   console.log('hello',date);
+  
+// }
+
+// const interval=setInterval(sayHello,1000)
+// // setTimeout(sayHello,500)
+// setTimeout(clearInterval,2000,interval)
+
+
+//  ============================================================= 
+//        Dot Notation vs Bracket Notation|IN|JAVASCRIPT 
+//  =============================================================
+
+// const student={
+//   name:'ghulam hassan',
+//   age:30,
+//   course:'web and app development',
+//   student:'martric'
+// }
+
+// console.log(student.name);
+// console.log(student['name']);
+
+
+//  ============================================================= 
+//                     this|IN|JAVASCRIPT 
+//  =============================================================
+const jonas={
+  firstName:"Jonas",
+  lastName:"Schmedtmann",
+  birthYeah:2007,
+  job:"teacher",
+  friends:["Michael","Peter","raza"],
+  hasDriversLicence:true,
+  calcAge:function(){
+    console.log(this);
+    return 2026-this.birthYeah
+    
+  }
+}
+
+console.log(jonas.calcAge());

@@ -1,0 +1,85 @@
+.flex{
+  display: flex;
+
+}
+nav{
+  justify-content: space-around;
+  align-items: center;
+  background-color: antiquewhite;
+}
+ul{
+  gap: 40px;
+}
+li{
+  list-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+span{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 20px;
+}
+/* default */
+.menu{
+  display: none;
+}
+#sidebar{
+  display: none;
+}
+
+/* mobile */
+@media screen and (max-width:700px){
+  .menu{
+    display: block;
+  }
+
+  /* sirf icons hide karo */
+  .link{
+    display: none;
+  }
+
+  .ul li{
+    display: none;
+  }
+
+  /* sidebar */
+#sidebar{
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: white;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+#sidebar ul{
+  list-style: none;
+  display: block;
+  text-align: center;
+}
+
+#sidebar ul li{
+  padding: 15px;
+  cursor: pointer;
+}
+
+#sidebar ul li:hover{
+  background: #555;
+}
+
+/* close button */
+.close-btn{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+}
+

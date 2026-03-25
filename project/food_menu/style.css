@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background-color: aliceblue;
+}
+h1{
+  text-align: center;
+}
+#btns{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+#btns button{
+  padding: 5px 20px;
+}
+#foodItems{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.foodItem{
+  display: flex;
+  gap: 10px;
+  width: 48%; 
+}
+#image{
+  width: 150px;
+  height: 150px;
+  width: 40%;
+}
+
+#image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#titleDescription{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titlePrice{
+display: flex;
+justify-content: space-between;
+}
+
+#searchMenu{
+  width: 240px;
+  padding: 8px;
+}

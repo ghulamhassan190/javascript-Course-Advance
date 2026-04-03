@@ -1079,18 +1079,689 @@
 //  ============================================================= 
 //                     this|IN|JAVASCRIPT 
 //  =============================================================
-const jonas={
-  firstName:"Jonas",
-  lastName:"Schmedtmann",
-  birthYeah:2007,
-  job:"teacher",
-  friends:["Michael","Peter","raza"],
-  hasDriversLicence:true,
-  calcAge:function(){
-    console.log(this);
-    return 2026-this.birthYeah
+// const jonas={
+//   firstName:"Jonas",
+//   lastName:"Schmedt mann",
+//   birthYeah:2007,
+//   job:"teacher",
+//   friends:["Michael","Peter","raza"],
+//   hasDriversLicence:true,
+//   calcAge:function(){
+//     console.log(this);
+//     return 2026-this.birthYeah
+//   },
+//   nickNameFoo:function(){
+//     return console.log(this.username=this.lastName.split(' ')[1]);
     
-  }
-}
+    
+//   }
+// }
 
-console.log(jonas.calcAge());
+// console.log(jonas.nickNameFoo());
+
+
+// object 
+// const stud1={
+//   name:"Ahmed Raza",
+//   batch:16,
+//   courseName:"Web n App",
+//   module:"2nd",
+//   campus:"Bahadurabbad",
+//   skills:["Html","css","javascript"],
+//   isMernDeveloper:false
+// }
+// console.log(stud1.courseName);
+// console.log(stud1.module); 
+
+
+// Constructor
+// function StudentData(name,batch,courseName,module,campus,skills,isMernDeveloper){
+// this.name=name
+// this.batch =batch
+// this.courseName =courseName
+// this.module =module
+// this.campus =campus
+// this.skills =skills
+// this.isMernDeveloper =isMernDeveloper
+
+// }
+
+// const data1=new StudentData("Ahmed Raza",16,"web n app","2nd","Bahadurabbad",["Html","css","javascript"],false)
+// console.log(data1);
+
+// StudentData.prototype.calcAge=function (birthYear) {
+//   let date=new Date();
+//   return date.getFullYear()-birthYear
+// }
+
+// console.log(data1.hasOwnProperty("name"));
+// window.location.href
+// // 'https://chatgpt.com/'
+// window.location.hostname
+// // 'chatgpt.com'
+// window.location.pathname
+// // '/'
+// document.referrer
+// var window11 = window.open();
+
+// if (window11) {
+//     window11.document.write("<h1>Welcome Hello</h1>");
+// } else {
+//     console.log("Popup blocked!");
+// }
+
+// window.open("https://chatgpt.com/","win2","height=230,width=430,")
+
+// var inputValue=document.querySelector('input')
+// document.querySelector('form').addEventListener('submit',function(e){
+// e.preventDefault()
+// console.log('ok');
+// // console.log(document.querySelector('select').value);
+// console.log(document.querySelector('select').selectedIndex);
+// if (document.querySelector('select').selectedIndex==0) {
+//   alert('please correct value')
+// }
+// if (inputValue.value.indexOf(" ")>=0) {
+//   alert("please no space ")
+// }
+
+// })
+
+
+// try{
+//   const userName=prompt("Hello ap kon hai ")
+
+//   if (userName=="hassan") {
+//     console.log("all Good");
+    
+//   }
+
+//   if (userName=="raza") {
+//     throw {
+//       status:false,
+//       message:"raza not allowed"
+//     }
+//   }
+//   if (userName=="ali") {
+//     throw {
+//       status:true,
+//       message:"ali not allowed"
+//     }
+//   }
+//   if (userName=="hussain") {
+//     throw {
+//       status:false,
+//       message:"hussain not allowed"
+//     }
+//   }
+//   console.log('ol');
+  
+// }catch(error){
+// console.log(error);
+// const heading1=document.createElement('h1')
+// document.body.appendChild(heading1)
+// heading1.textContent=error.message
+
+// if (error.status==true) {
+//   heading1.style.background="green"
+// }else{
+//   heading1.style.background="red"
+
+// }
+// }
+
+
+// const a="hassan"
+// var b= "hassan"
+
+// console.log(a);
+// console.log(b);
+
+
+// --------------------------HOISTING---------------------- 
+// {
+//   console.log(b);
+//   let b=20
+  
+// }
+
+
+// foo()
+// function foo(){
+//   let b=20
+//   console.log(b);
+// }
+// console.log(a);
+// var a ="ghulam hassan"
+
+// console.log(a);
+// let a ="ghulam hassan"
+
+// -------|-------------
+// TDZ=> Temporal Dead Zone
+// ----------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------
+// step 1
+// var name="Ahmed RAZA"
+// console.log(this.a);
+
+// step 2
+// function foo(){
+//   console.log(this);
+  
+// }
+// foo()
+// step 3
+// var obj={
+//   name:"ghulam hassan3",
+//   leaning:function(){
+//     console.log(`${this.name} is final name`);
+
+//   }
+// }
+
+// obj.leaning()
+
+// var obj1={
+  //   name:"ghulam hassan3",
+  //   leaning:()=>{
+//     console.log(`${this.name} is final name`);
+
+//   }
+// }
+
+// obj1.leaning()
+
+
+// document.querySelector('#renderH1').addEventListener("click",function(){
+//   console.log(this);
+// })
+
+
+// const talha ={
+//   name:"talha",
+//   foo:function(){
+//     console.log(this);
+//     console.log(this.name);
+    
+    
+//   }
+// }
+//  console.log(talha);
+//  console.log(talha.foo());
+ 
+//  const ahmed ={
+//    name:"ahmed",
+//   }
+  
+//   ahmed.foo=talha.foo
+
+//  console.log(ahmed);
+//  console.log(ahmed.foo());
+
+
+//  const c=talha.foo
+//  console.log(c);
+//  console.log(c());
+ 
+
+// const obj={
+//   name:"raza",
+//   func:foo
+// }
+// console.log(obj.func());
+
+// ----------------------------------------------------------------------------------------------------------------
+  // ----------------------------------------------------------------------------------------------------------------
+
+// Object.assign
+  // const obj={
+  //   name:"hassan"
+  // }
+  // const objcopy=Object.assign({},obj)
+  // objcopy.lastName="raza"
+  // console.log(obj);
+  // console.log(objcopy);
+ 
+  // spread operator
+  // const obj1={
+  //   ...obj,
+  //   name:"raza"
+  // }
+  // console.log(obj1);
+  
+
+  // -------------------------------------------------------------
+  // -------------------------------------------------------------
+  // const students=['talha',"ahmed","shoaib","bilal"]
+  // console.log(students[0]);
+  // console.log(students[1]);
+  // console.log(students[2]);
+  
+  // destructuring
+// const [a,b,c]=students
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// -----------------------------------
+// const trainer={
+//   name:"ghulam hassan",
+//   class:[1,2,3,4,5,6,7,8,9,10],
+//   course:"web n app",
+//   institute:"smit",
+//   profession:"web development",
+//   techStack:"js"
+// }
+// console.log(trainer);
+
+// // destructuring
+// const {name,course,institute}=trainer
+// console.log(name);
+// console.log(course);
+// console.log(institute);
+
+
+// spread operator
+// rest operator
+
+//        rest = spread 
+// const [v,z,...all]=[1,2,3,4,5]
+// console.log(v,z,all);
+
+// Array
+// const students=['talha',"ahmed","shoaib","bilal"]
+
+// const [first,second,...other]=students
+// console.log(first);
+// console.log(second);
+// console.log(other);
+
+// Object
+// const trainer={
+  //   name:"ghulam hassan",
+  //   class:[1,2,3,4,5,6,7,8,9,10],
+//   course:"web n app",
+//   institute:"smit",
+//   profession:"web development",
+//   techStack:"js"
+// }
+// const {name,course,...others}=trainer
+// console.log(name);
+// console.log(course);
+// console.log(others);
+
+// function
+// const add =function(...number){
+//   console.log(number);
+  
+// }
+// add(2,3,4)
+// add(2,3,4,5,4,3)
+// add(2,3,4,5)
+
+// ------------------------------------------------------------------- 
+// New operators (nullish, or assignment, nullassignment, andassignment)
+// -------------------------------------------------------------------
+// nullish
+// const numberOfApplicants=null
+// console.log(numberOfApplicants??"New Value");
+
+// or assignment
+// const rest1={
+  //   name:"raza",
+  //   age:20
+// }
+// const rest2={
+//   name:"ahmed",
+// }
+// console.log(rest1);
+// console.log(rest2);
+
+
+// rest1.age||=100
+// rest2.age||=100
+
+// console.log(rest1);
+// console.log(rest2);
+
+// const rest1={
+//   name:"raza",
+//   age:20
+// }
+// const rest2={
+  //   name:"ahmed",
+  // }
+// console.log(rest1);
+// console.log(rest2);
+
+
+// rest1.age??=100
+// rest2.age??=100
+
+// console.log(rest1);
+// console.log(rest2);
+
+// for of loop    
+// const students=['talha',"ahmed","shoaib","bilal"]
+// for (const student of students.entries()) {
+//   console.log(student);
+// }
+
+// const rest1={
+//   name:"raza",
+//   age:20
+// }
+
+
+// console.log(Object.entries(rest1));
+
+//                     Optional Chaining
+// const obj={
+//   name:"hassan",
+//   course:{
+//     name:"web n App"
+//   },
+//   student:"10"
+// }
+
+// console.log(obj?.university?.name);
+// console.log(obj.course.name);
+
+//  Object.keys & Object.values Explained
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+
+
+// ------------------------------------------------------------------- 
+                     //  Set | Map 
+// -------------------------------------------------------------------
+// const orderSet=new Set([
+//   "pasta","pasta","pasta"
+// ])
+
+// console.log(orderSet.size);
+// console.log(orderSet.add("hassan"));
+// console.log(orderSet.add("hassan"));
+// console.log(orderSet.has("pasta"));
+
+// console.log(orderSet);
+
+// const staff=["Waiter","Chef","Waiter","Chef","Mangers"]
+
+// const newStaff=[...new Set(staff)]
+// console.log(newStaff);
+
+
+// const obj1=new Map();
+// obj1.set(1," hassan")
+// obj1.set("name","ghulam hassan")
+
+// console.log(obj1.get("name"));
+// console.log(obj1.get(1));
+
+// const names="Ahmed Raza".split(' ')[1].toUpperCase()
+// console.log(names);
+
+
+// =========================================================================
+                  // padStart & padEnd in JavaScript
+// =========================================================================
+// const message="ghulam hassan!"
+// console.log(message.padStart(20,"+").padEnd(30,"+"))
+
+
+// const email ='ghulamhassan@gmail.com'
+// console.log(email.slice(4,-4).padEnd(email.length-4,"*").padStart(email.length,"*"));
+
+
+// const number="03463628863"
+// console.log(number.slice(0,7).padEnd(11,"*"));
+
+
+// function marksValue(number){
+// const str=number +"";
+// const last = str.slice(-4)
+// return last.padStart(str.length,"*")
+// }
+
+// console.log(marksValue(49309404));
+// console.log(marksValue(49309404589676904));
+// console.log(marksValue(49309404569805060608059));
+
+// repeat 
+// const message2="ghulam hassan"
+// console.log(message2.repeat(5));
+
+// function message(n){
+//   console.log(`ghulam hasssan ${n} ${"🛺".repeat(n)}`);
+// }
+// message(5)
+
+// example 
+// const filghts="FlightNo: PK302, From: Karachi, To: Lahore, Departure: 10:30 AM, Arrival: 12:00 PM, Status: On Time+FlightNo: PK303, From: Lahore, To: Karachi, Departure: 02:00 PM, Arrival: 03:30 PM, Status: Delayed+FlightNo: PK304, From: Islamabad, To: Karachi, Departure: 06:00 AM, Arrival: 08:00 AM, Status: On Time+FlightNo: PK305, From: Karachi, To: Dubai, Departure: 09:00 PM, Arrival: 11:30 PM, Status: Cancelled"
+
+// // console.log(filghts.split("+"));
+
+// for (const filght of filghts.split("+")) {
+  //   // console.log(filght);
+  //   const [type,from,to ,time]=filght.split(":")
+  //   console.log(`${type} ${from} ${to} ${time}`);
+  
+  
+  // }
+  
+// default parameter
+// const bookings=[];
+// const createBooking=function(flightNum,numPassengers=10,price=199*1.2){
+  //   const booking={
+//     flightNum,
+//     numPassengers,
+//     price
+//   }
+//   console.log(booking);
+//   console.log(bookings.push(booking));
+//   console.log(bookings);
+
+// }
+// createBooking("H4783")
+// createBooking("H4783",9,800)
+
+// =========================================================================
+              // First-Class vs Higher-Order vs Callback vs Closure
+// =========================================================================
+// function foo(){
+// console.log('ok ');
+
+// }
+// foo()
+
+// (function(){
+// console.log('ok');
+
+// }())
+
+// const foo=(name)=>{
+// return name.toUpperCase()
+// }
+// console.log(foo("hassan"));
+
+// const foo2=(name)=> name.toUpperCase() 
+// console.log(foo2("raza"));
+
+
+// function count(){
+//   let counter=0;
+//   return function (){
+//     counter++
+//   }
+// }
+// console.log(count());
+
+// example
+// const greet=function (greeting){
+//   var a="Mern Stack"
+//   return function(name){
+//     console.log('===>');
+//     var b="Development"
+//     return function(){  
+//       return name.toUpperCase()+" " + a  +  b
+//     }
+    
+//   }
+// }
+// console.log(greet()("Ghulam Hassan")());
+
+
+// ==================================================================
+// call() & apply() in JavaScript 🔥 | THIS Keyword Control Explained
+// ==================================================================
+// const lufthansa={
+  //   airline:"Lifthansa",
+  //   iATACode:"LH",
+//   bookings:[],
+//   book(flights,name){
+//     console.log(
+//       `${name} booked a seat on ${this.airline} 
+//       flight ${this.iATACode} ${flights}
+//       `
+//     );
+    
+//   }
+// }
+
+// console.log(lufthansa.book(494,"HAssan"));
+// console.log(lufthansa);
+
+// const book = lufthansa.book
+// const pia={airline:"PIA",iATACode:"P2375"}
+// const saudiAirline={airline:"Sudai",iATACode:"S2375"}
+
+// book.call(pia,1,"sufiyan")
+// book.call(saudiAirline,98,"HAssan")
+
+// const calTotal=function(){
+//   console.log(this.scores[0]+this.scores[1]+this.scores[2]);
+// }
+// const std1={name:"jaffer",scores:[90,80,70]}
+// const std2={name:"HAssan",scores:[10,70,40]}
+// const std3={name:"RAza",scores:[50,0,60]}
+
+// calTotal.call(std1)
+// calTotal.call(std2)
+// calTotal.call(std3)
+// const filightData=[500,"HASSAN"]
+// book.apply(saudiAirline,filightData)
+
+
+// 👉 call() method function ko immediately call karta hai aur this ko set karta hai, jab ke arguments ko individually (comma-separated) pass kiya jata hai.
+
+// 👉 apply() method function ko immediately call karta hai aur this ko set karta hai, jab ke arguments ko array (ya array-like object) ki form mein pass kiya jata hai.
+
+// 👉 bind() method function ko immediately call nahi karta, balki ek naya function return karta hai jisme this set hota hai aur baad mein call kiya ja sakta hai.
+// const bindnew=book.bind(saudiAirline)
+// bindnew(500,"HASSAN")
+
+
+// const pia={
+//   airline:"PTA",
+//   planes:300,
+//   buyPlanes(){
+//     this.planes++
+//     console.log(this.planes);
+//   }
+// }
+
+// document.querySelector('button').addEventListener("click",pia.buyPlanes.bind(pia))
+  // ==================================================================
+  // Synchronous vs Asynchronous JavaScript 🔥 | Explained with Real Example
+  // ==================================================================
+  //  const a="a"
+
+  //  console.log(a,"===>");
+
+  //  setTimeout(function(){
+  //   console.log('after 3 second');
+  //  },0)
+  //  console.log("set time out after");
+   
+  // ==================================================================
+  //     What is an API? 🔥 | First API Call Explained for Beginners
+  // ==================================================================
+
+  // #Promise JavaScript ka ek object hota hai jo asynchronous operation ka result represent karta hai — ya to future mein complete hoga (resolve) ya fail hoga (reject).
+
+//   const img=document.querySelector("img")
+//   const cardTitle=document.querySelector(".card-title")
+//   const cardText=document.querySelector(".card-text")
+  
+//   const request=fetch(" https://restcountries.com/v3.1/name/pakistan")
+
+//   request.then(function(result){
+//     return result.json()
+//   }).then(function(result){
+//     console.log(result[0]);
+//     renderitem(result)
+   
+//   })
+  
+//   console.log(request);
+  
+//   function renderitem(countryDetails){
+//     const [countryData]=countryDetails
+//     const  {flags,name}=countryData
+//     const {common,official}=name
+//  img.src=flags.png
+//     cardTitle.textContent=common
+//     cardText.textContent=official
+//   }
+
+// =========================================================================
+        //  Microtask vs Callback Queue | Event Loop Deep Dive
+// =========================================================================
+// Microtask Queue ==> important Task 
+// Callback Queue  ==> Normal Task 
+// JavaScript |single-threaded| hota hai (ek time par sirf ek kaam karta hai) lekin |non-blocking| hota hai (baqi kaam rukte nahi, async tareeke se handle ho jate hain).
+
+// Promise ----> result ----> then/cache 
+// Promise -----> return -----> Promise
+// Promise ====> constructor   | Higher Order Function
+// new Promise(function(resolve,reject){
+// })
+
+// Interview Question 
+// console.log('Test Start ');
+// setTimeout(()=>console.log('0 sec timer '),0)
+// Promise.resolve("Resolved").then(res=>console.log(res))
+// console.log('Test end ');
+
+
+
+// const test=new Promise(( resolve,reject)=>{
+//   resolve("HAssan")
+// })
+
+// test.then((result)=>{
+//   console.log(result);
+  
+// })
+
+
+// Promise.resolve("Muhammad").then((result)=>console.log(result))
+// Promise.reject(new Error("problems!")).catch((error)=>{
+//   console.log(error);
+  
+// })
+
+// const lotteryPromise=new Promise(( resolve,reject)=>{
+//   if (Math.random()>0.5) {
+//     resolve("You Win")
+//   }else{
+//     reject("You lose your Money")
+//   }
+// })
+
+// lotteryPromise.then(res=>console.log(res))
+// lotteryPromise.catch(e=>console.log(e))
+
+
+// Async/Await Made EASY | Stop using .then()

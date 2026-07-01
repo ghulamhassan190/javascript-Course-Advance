@@ -1765,3 +1765,657 @@
 
 
 // Async/Await Made EASY | Stop using .then()
+
+// const whereAMI=async function () {
+//     const request= await fetch(" https://restcountries.com/v3.1/name/pakistan")
+//     const resjson=await request.json()
+//     console.log(resjson);
+// }
+
+// whereAMI()
+
+// const test=new Promise(( resolve,reject)=>{
+//   resolve("HAssan")
+// });
+
+// (async function () {
+//   const res=await test
+//   console.log(res);
+  
+// })()
+
+
+// https://forkify-api.herokuapp.com/api/v2/recipes?search=pizza
+
+// fetch("https://forkify-api.herokuapp.com/api/v2/recipes?search=pizza")
+// .then((result)=>{
+//   return result.json()
+// })
+// .then((result)=>{
+// console.log(result);
+// })
+// .catch((error)=>{
+//   console.log(error,"====>");
+  
+// })
+
+// async await
+//  async function fetchAPI(){
+//   const res=await fetch("https://forkify-api.herokuapp.com/api/v2/recipes?search=pizza")
+//   const resJson=await res.json()
+//   console.log(resJson);
+  
+
+// }
+
+// fetchAPI()
+
+// Create a responsive website using HTML, CSS, and JavaScript.
+// Integrate Firebase into your project.
+// Implement Firebase Authentication:
+// User Signup (Email & Password)
+// User Login
+// User Logout
+// After login, redirect user to a dashboard/home page.
+// Add products using realtime database.
+// Show the logged-in user’s email on the dashboard.
+// Add proper error handling (e.g., wrong password, invalid email).
+// Use a clean and user-friendly UI design.
+// Deploy the website using serge or github url
+
+// =====================================================================
+    // Promises But On Steroids | Promise.all, race, any & allSettled
+// =====================================================================
+// all 
+// any 
+// allsettled
+// race
+
+// const p1 = Promise.resolve("Data 1");
+// const p2 = Promise.resolve("Data 2");
+// const p3 = Promise.resolve("Data 3");
+
+// Promise.all([p1, p2, p3])
+//     .then(results => {
+//         console.log(results); // ["Data 1", "Data 2", "Data 3"]
+//     })
+//     .catch(error => {
+//         console.log(error);
+//     });
+
+
+
+// const p1 = Promise.resolve("OK");
+// const p2 = Promise.reject("Error aa gaya");
+// const p3 = Promise.resolve("OK 3");
+
+// Promise.all([p1, p2, p3])
+//     .then(res => console.log(res))
+//     .catch(err => console.log(err)); // "Error aa gaya"
+
+// async function getAllData() {
+//     try {
+//         const [users, posts, comments] = await Promise.allSettled([
+//             fetch("https://jsonplaceholder.typicode.com/users")
+//                 .then(res => res.json()),
+
+//             fetch("https://jsonplaceholder.typicode.com/posts")
+//                 .then(res => res.json()),
+
+//             fetch("https://jsonplaceholder.typicode.com/comments")
+//                 .then(res => res.json())
+//         ]);
+//         console.log("Users:", users);
+//         console.log("Posts:", posts);
+//         console.log("Comments:", comments);
+
+//     } catch (err) {
+//         console.log("Error:", err);
+//     }
+    
+// }
+
+// getAllData();
+
+// =========================================================================
+        // then catch finally
+// =========================================================================
+// const myPromise=new Promise((resolve,reject)=>{
+//   setTimeout(() => {
+//     const randomNumber=Math.random()
+//     console.log(randomNumber);
+    
+//     if (randomNumber>0.5) {
+//       resolve("yes")
+//     } else {
+//       reject("No")
+//     }
+//   }, 5000);
+// })
+
+// myPromise.then((positive)=>{
+// console.log('positive');
+
+// }).catch((negetive)=>{
+//   console.log('negetive');
+
+// }).finally(()=>{
+//   console.log('ok');
+  
+// })
+
+// function DataShow(){
+//   try {
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//                 .then(res => res.json())
+//                 .then(res => console.log(res))
+//   } catch (error) {
+    
+//   }
+// }
+// DataShow()
+
+// const shadiPromise=new Promise((resolve,reject)=>{
+//   const randomNumber=Math.random()
+//   setTimeout(() => {
+//     if (randomNumber>0.5) {
+//       resolve("bandy ki shadi hogayegi month mein")
+//     }else{
+//           reject("bandy ki shadi Nhi  ")
+//     }
+    
+//   }, 5000);
+// })
+
+// shadiPromise
+//   .then((positive)=>{
+//     console.log(positive,"positive");
+    
+//   })
+//   .catch((nagetive)=>{
+//     console.log(nagetive,"negetive");
+    
+//   }).finally(()=>{
+//     console.log("banda wapas chla gya ");
+
+//   })
+
+// async function foo(){
+//   try {
+//     const update=await shadiPromise
+//     console.log(update);
+    
+//   } catch (error) {
+//     console.log(error);
+    
+//   }
+//       console.log("banda wapas chla gya ");
+  
+// }
+
+// foo()
+
+// Promise all 
+// const promise1=new Promise((resolve,reject)=>{
+//   setTimeout(resolve,300,"promise1")
+// })
+// const promise2=93
+
+// const promise3=new Promise((resolve,reject)=>{
+//   setTimeout(resolve,100,"promise3")
+// })
+
+// Promise.all([promise1,promise2,promise3])
+//   .then((value)=>{
+//     console.log(value);
+    
+//   }).catch((err)=>{
+//     console.log(err);
+    
+//   })
+
+
+// const arr=[
+//   fetch('https://jsonplaceholder.typicode.com/posts'),
+//   fetch('https://jsonplaceholder.typicode.com/posts'),
+//   fetch('https://jsonplaceholder.typicode.com/posts'),
+//   fetch('https://jsonplaceholder.typicode.com/posts'),
+  
+
+// ]
+// Promise.all(arr)
+// Promise.allSettled(arr)
+// Promise.race(arr)
+// Promise.any(arr)
+//       .then((value)=>{
+//     console.log(value);
+    
+//   }).catch((err)=>{
+//     console.log(err);
+    
+//   })
+
+
+// =====================================================================
+    // Stop Writing One Big File 😅 | Modules in JavaScript | Part 1
+// =====================================================================
+
+// javacript 1 
+// javacript 1
+
+// console.log("app.js");
+
+// import { data } from "./data.js";
+// import {price as newprice} from "./pakistan.js";
+// import * as newfile from "./pakistan.js"
+// const heading=document.createElement("h1")
+// console.log(newfile)
+// newfile.hassanName(heading);
+
+// // fullName()
+
+
+// console.log(newprice);
+// console.log(data);
+
+
+// =============================================================================
+// OOP Explained | 4 Pillars of Object Oriented Programming
+// =============================================================================
+
+// const Person=function(firstName,secondYear){
+//   this.firstName=firstName;
+//   this.secondYear=secondYear
+// }
+
+// const jonus=new Person("Hassan",2000)
+// const raza=new Person("raza",2022)
+// const hassan=new Person("umar",1999)
+
+// console.log(jonus,raza,hassan);
+// console.log(jonus instanceof Person);
+// console.log(Person.prototype);
+
+// Person.prototype.caleAge=function(){
+//   console.log(2037-this.secondYear);
+// }
+// jonus.caleAge()
+
+// console.log(jonus.__proto__);
+// console.log(jonus.__proto__==Person.prototype );
+
+// function Insaan(gender,name,age){
+//   console.log(this);
+//   this.gender=gender;
+//   this.name=name;
+//   this.age=age;
+// }
+
+// Insaan.prototype.unique=function(){
+//   console.log("mein ap ko unique cheezy do ga ");
+// }
+// const ilyas=new Insaan("male","ilyas",24)
+// console.log(ilyas);
+// console.log(ilyas.__proto__);
+// console.log(Insaan.prototype);
+// console.log(Insaan.prototype.isPrototypeOf(ilyas));
+// console.log(Insaan.hasOwnProperty("name"));
+
+// object literal
+// const obj={}
+// const obj1=new Object()
+// console.log(obj,obj1);
+
+
+// array literls
+// Array.prototype.uniquess=function(){
+//   return "ghulam hassan"
+// }
+// const newArr=[]
+// console.log(newArr.uniquess());
+
+// =============================================================================
+// How to Create a Class in JavaScript 🧠 | OOP Explained
+// =============================================================================
+
+// class Insaan{
+//   constructor(gender,name,age){
+//     this.gender=gender;
+//   this.name=name;
+//   this.age=age;
+// }
+// unique(){
+//   console.log("ghulam hassan");
+    
+//   }
+// }
+// const ilyas=new Insaan("male","ilyas",24)
+// console.log(ilyas);
+
+
+
+// =============================================================================
+// Getter & Setter | JavaScript Classes Secret Trick
+// =============================================================================
+// const account={
+//   owner:"jones",
+//   movements:[200,300,400,500],
+//   get latest(){
+//     return this.movements.slice(-1).pop()
+//   },
+//   set latest(mov){
+//     this.movements.push(mov)
+//   },
+// }
+// console.log(account.latest=50 );
+
+
+// ==========================================================
+      // Array.from() == Method 
+// ==========================================================
+
+// const newArr=Array.from({length:10000},(v,i)=>v)
+// console.log(newArr);
+
+// ==========================================================
+      // static Method 
+// ==========================================================
+
+// class Insaan{
+  //   constructor(gender,name,age){
+//     this.gender=gender;
+//   this.name=name;
+//   this.age=age;
+// }
+// unique(){
+  //   console.log("ghulam hassan"); 
+  //   }
+  
+  //   static zindagi(){
+//     console.log("life Time");
+
+//   }
+// }
+// const ilyas=new Insaan("male","ilyas",24)
+// console.log(ilyas.zindagi());
+
+
+// ==========================================================
+      // Object Create 
+// ==========================================================
+
+// const PersonProto={
+//   calcAge(){
+//     console.log(2037-this.  birthYear);
+    
+//   }
+// }
+
+// const steven=Object.create(PersonProto)
+// console.log(steven);
+// steven.name="steven",
+// steven.birthYear=2002,
+// steven.calcAge()
+
+
+// constructor --> prototype
+// object ---> __proto___
+
+
+// const school ={
+//   tellAdres(){
+//     console.log(`this is Address ${this.city}`);
+    
+//   }
+// }
+
+// const schoolName=Object.create(school)
+// schoolName.city="karachi"
+// console.log(schoolName.tellAdres());
+
+
+// class se class
+// const Student=function(firstName,birthYear,course){
+//   this.firstName=firstName;
+//   this.birthYear=birthYear;
+//   this.course=course;
+// } 
+
+// Student.prototype.introduce=function(){
+//   console.log(`My name is ${this.firstName} and I study ${this.course}`);
+// }
+
+// const mike=new Student("mike",2020,"computer Science")
+
+// console.log(mike);
+// console.log(mike.introduce());
+
+
+// function Insaan(firstName,fatherName){
+//   this.fatherName=fatherName;
+//   this.firstName=firstName;
+// }
+
+// Insaan.prototype.introduction=function(){
+//   console.log(`my Name is ${this.firstName} my father name is ${this.fatherName}`);
+// }
+
+// function Smit(firstName,fatherName,course){
+//   Insaan.call(this,firstName,fatherName)
+//   this.course=course;
+// }
+// // Linking prototype 
+// Smit.prototype=Object.create(Insaan.prototype)
+
+// const hassan=new Smit("Ghulam hassan","ghulam Mustufa","WebnApp")
+// const raza=new Smit("raza ahmed","ahmed siddique","WebnApp")
+// console.log(hassan);
+// console.log(hassan.introduction());
+// console.log(raza);
+// -------------------------------------------------------------------------------------------
+// class Personcl{
+//   constructor(firstName,fatherName){
+//     this.firstName=firstName;
+//     this.fatherName=fatherName
+//   }
+//   introduction(){
+//     console.log(`Hi my Name is ${this.firstName} my Father name is ${this.fatherName} and course Name is ${this.course}`);
+    
+//   }
+// }
+// const newWord=new Personcl("Hassan","Mustufa")
+// console.log(newWord.introduction());
+// class StudentCl extends Personcl{
+//    constructor(firstName,fatherName,course){
+//     super(firstName,fatherName)
+//     this.course=course
+//     this._courseOutline=['html',"css","javascript"]
+//    }
+//    static show(){
+//     console.log("this._courseOutline");
+    
+//    }
+// } 
+// const newanswer=new StudentCl("Raza","siddique","WebNApp",)
+// console.log(newanswer);
+// console.log(StudentCl.show());
+// =========================================================
+// class Account{
+//    #movements=["html","css","js"];
+//   constructor(owner,currency,pin){
+//     this.owner=owner;
+//     this.currency=currency;
+//     this.pin=pin;
+   
+//     this.locale=navigator.language;
+
+//     console.log(`Thanks for opening an account ${owner}`);
+    
+//   }
+//   introduc(){
+//     // console.log(this.#movements);
+    
+//   }
+//   // deposit(val){
+//   //   this.movements.push(val)
+//   // }
+//   // withdraw(val){
+//   //   this.deposit(-val)
+//   // }
+
+// }
+// const acc1=new Account("Hassan","USD",1111)
+// // acc1.movements.push(250)
+// // acc1.movements.push(-140)
+// // acc1.deposit(250)
+// // acc1.withdraw(-250)
+//  console.log(acc1);
+ 
+
+// =============================================================
+  // Introduction OOP 
+// =============================================================
+// Abstraction =>        
+// Encapsulation =>         
+// Inheritance =>         
+// Polymorphism  =>         
+
+// =============================================================
+  // JavaScript Classes ｜ Syntatic Sugar for Constructors
+// =============================================================
+
+// 'use strict'
+// class Obj{
+//   constructor(name,fatherName,age,subject,course,gender,location){
+//     this.name=name;
+//     this.fatherName=fatherName;
+//     this.age=age;
+//     this.subject=subject;
+//     this.course=course;
+//     this.gender=gender;
+//     this.location=location;
+//   }
+//   speak(){
+//     console.log(`my name is ${this.name} my father name is ${this.fatherName} and is age ${this.age} and subject is ${this.subject} and cousre name is ${this.course} and gender is ${this.gender}and location ${this.location}`);
+    
+//   }
+// }
+
+// const obj1=new Obj("Hassan","Mustufa",20,"Computer Science","WebNApp","Male","Karachi")
+// console.log(obj1);
+// console.log(obj1.speak());
+
+// ===================================================================
+  // Prototype inheritance using constructor functions (Full clarity)
+// ===================================================================
+
+// class se class
+// const Student=function(firstName,birthYear,course){
+//   this.firstName=firstName;
+//   this.birthYear=birthYear;
+//   this.course=course;
+// } 
+
+// Student.prototype.introduce=function(){
+//   console.log(`My name is ${this.firstName} and I study ${this.course}`);
+// }
+
+// const mike=new Student("mike",2020,"computer Science")
+
+// console.log(mike);
+// console.log(mike.introduce());
+
+
+function Insaan(firstName,fatherName){
+  this.fatherName=fatherName;
+  this.firstName=firstName;
+}
+
+// Insaan.prototype.introduction=function(){
+//   console.log(`my Name is ${this.firstName} my father name is ${this.fatherName}`);
+// }
+
+// function Smit(firstName,fatherName,course){
+//   Insaan.call(this,firstName,fatherName)
+//   this.course=course;
+// }
+// // Linking prototype 
+// Smit.prototype=Object.create(Insaan.prototype)
+
+// const hassan=new Smit("Ghulam hassan","ghulam Mustufa","WebnApp")
+// const raza=new Smit("raza ahmed","ahmed siddique","WebnApp")
+// console.log(hassan);
+// console.log(hassan.introduction());
+// console.log(raza);
+// =============================================================
+  // Why Static Methods Exist ｜ JS Constructors & Classes
+// =============================================================
+// let newArr=Array.from({length:1000000},(e,i)=>i)
+// console.log(newArr);
+
+// =============================================================
+  // 99% JavaScript Developers Don't Know Object.create()
+// =============================================================
+
+// const Person={
+//   calcAge(){
+//     console.log("ok");
+    
+//   }
+// }
+
+// const objcreate=Object.create(Person)
+// console.log(objcreate.calcAge());
+
+
+// =============================================================
+  // Constructor Function Exercise ｜ Create Car Object Using Prototype
+// =============================================================
+
+// function Car(make,speed){
+//   this.make=make;
+//   this.speed=speed;
+// }
+// Car.prototype.accelete=function(){
+//   this.speed+=10
+// }
+
+// Car.prototype.brake=function(){
+//   this.speed-=5
+// }
+// const newArr=new Car("suzuki",90)
+// console.log(newArr);
+// console.log(newArr.brake());
+
+// =============================================================
+// Constructor Functions ｜ Prototype vs proto FINALLY Clear
+// =============================================================
+
+
+
+// =============================================================
+//  Getter & Setter ｜ Access Control in Javascript OOP
+// =============================================================
+  class Obj{
+    constructor(name){
+      this.name=name
+    }
+    get changeName(){
+      this.name="Hassan khan"
+    }
+    set changeset(name){
+      this.name=name
+    }
+  }
+
+  const obj1=new Obj("Hassan")
+  console.log(obj1);
+  obj1.changeset="ali"
+  console.log();
+  console.log(obj1);
+  
+
+
+// =============================================================
+//  Interview Question： constructor inheritance using call()
+// =============================================================
